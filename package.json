@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "concurrently \"nuxt dev\" \"go run server/github_stats.go\"",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.12.5",
+    "nuxt": "^3.13.0",
+    "nuxt-gsap-module": "^2.0.0",
+    "split-type": "^0.3.4",
+    "three": "^0.169.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
